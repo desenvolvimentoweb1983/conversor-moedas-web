@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import styles from "./Sobre.module.css";
 
 export const metadata: Metadata = {
   title: "Sobre o Projeto",
@@ -14,13 +15,11 @@ export const metadata: Metadata = {
 
 export default function SobrePage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-12 space-y-10">
+    <main className={styles.sobreMain}>
       
       <section>
-        <h1 className="text-3xl font-bold mb-3">
-          Sobre o Projeto
-        </h1>
-        <p className="text-gray-600 leading-relaxed">
+        <h1>Sobre o Projeto</h1>
+        <p>
           O Conversor de Moedas Web é uma aplicação moderna desenvolvida para
           realizar conversões cambiais em tempo real de forma simples, rápida e
           acessível diretamente pelo navegador.
@@ -28,23 +27,26 @@ export default function SobrePage() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-2">
-          Origem do Sistema
-        </h2>
-        <p className="text-gray-600 leading-relaxed">
+        <h2>Origem do Sistema</h2>
+        <p>
           Este projeto nasceu inicialmente como uma aplicação desktop desenvolvida
           em Python com interface gráfica. A versão atual representa a evolução
           dessa ideia para o ambiente web, proporcionando maior acessibilidade,
           melhor experiência do usuário e compatibilidade com qualquer dispositivo.
+          Confira o projeto original no{" "}
+          <a
+            href="https://github.com/desenvolvimentoweb1983/Conversor-de-Moedas-em-Python-Tkinter-API-"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>.
         </p>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-2">
-          Tecnologias Utilizadas
-        </h2>
-
-        <ul className="list-disc pl-6 text-gray-600 space-y-1">
+        <h2>Tecnologias Utilizadas</h2>
+        <ul>
           <li>Next.js — estrutura moderna para aplicações web</li>
           <li>React — construção de interfaces dinâmicas</li>
           <li>TypeScript — tipagem e segurança no código</li>
@@ -54,21 +56,17 @@ export default function SobrePage() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-2">
-          Objetivo
-        </h2>
-        <p className="text-gray-600 leading-relaxed">
+        <h2>Objetivo</h2>
+        <p>
           O objetivo deste projeto é demonstrar a construção de uma aplicação web
           moderna e funcional, aplicando boas práticas de desenvolvimento,
           responsividade, SEO e integração com serviços externos.
         </p>
       </section>
 
-      <section className="bg-gray-100 p-6 rounded-2xl">
-        <h2 className="text-xl font-semibold mb-2">
-          Sobre o Desenvolvedor
-        </h2>
-        <p className="text-gray-600 leading-relaxed">
+      <section className={styles.sectionHighlight}>
+        <h2 className="sobreSectionTitle">Sobre o Desenvolvedor</h2>
+        <p>
           Projeto desenvolvido como parte da evolução contínua de aprendizado em
           desenvolvimento web, com foco em aplicações modernas, performáticas e
           bem estruturadas.
