@@ -1,0 +1,145 @@
+/* ConverterClient.module.css */
+
+/* Container principal */
+.converterMain {
+  max-width: 48rem; /* 3xl */
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Títulos e textos */
+.heading {
+  font-size: 1.875rem; /* 3xl */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111827; /* gray-900 */
+  text-align: center;
+}
+
+body.dark .heading {
+  color: #f3f4f6; /* gray-100 */
+}
+
+.subText {
+  font-size: 1rem;
+  color: #6b7280; /* gray-500 */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body.dark .subText {
+  color: #d1d5db; /* gray-300 */
+}
+
+/* Card principal */
+.card {
+  background-color: #ffffff;
+  border-radius: 1.5rem; /* rounded-2xl */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark .card {
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Input e select */
+.input,
+.select {
+  width: 100%;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: #111827; /* gray-900 */
+}
+
+body.dark .input,
+body.dark .select {
+  border-color: #374151;
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+/* Grid de selects */
+.selectGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Botão */
+.button {
+  width: 100%;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+body.dark .button {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+/* Mensagens */
+.message {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.error {
+  color: #dc2626; /* red-600 */
+}
+
+.resultCard {
+  text-align: center;
+  background-color: #f3f4f6; /* gray-100 */
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+body.dark .resultCard {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+.resultText {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+body.dark .resultText {
+  color: #d1d5db;
+}
+
+.resultValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+body.dark .resultValue {
+  color: #f3f4f6;
+}

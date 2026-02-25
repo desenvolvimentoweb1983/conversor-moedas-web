@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💱 Conversor de Moedas Web
 
-## Getting Started
+Aplicação web para conversão de moedas em tempo real, desenvolvida com React e Next.js, consumindo uma API de taxas de câmbio atualizadas.
 
-First, run the development server:
+Este projeto é a evolução de uma aplicação desktop desenvolvida anteriormente em Python com Tkinter, criada durante meu processo de aprendizado em programação. A versão atual representa a migração da lógica para o ambiente web moderno, com interface responsiva e deploy em produção.
+
+---
+
+## 🌐 Acesse o projeto online
+
+🔗 https://conversor-moedas-web.vercel.app/
+
+---
+
+## 🧠 Origem do Projeto
+
+Este sistema foi inicialmente desenvolvido como um aplicativo desktop em Python utilizando:
+
+* Interface gráfica com Tkinter
+* Requisições HTTP com Requests
+* Consumo de API de câmbio em tempo real
+
+A versão web foi criada para:
+
+✔ aplicar conceitos de desenvolvimento frontend moderno
+✔ migrar lógica de desktop para web
+✔ praticar arquitetura de aplicações React
+✔ publicar aplicação real em produção
+
+---
+
+## 🚀 Funcionalidades
+
+* Conversão de valores entre moedas em tempo real
+* Interface moderna e responsiva
+* Integração com API de câmbio
+* Validação de dados de entrada
+* Atualização automática de taxas
+* Experiência simples e intuitiva
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+### Frontend
+
+* React
+* Next.js
+* TypeScript
+* Tailwind CSS
+
+### Integração
+
+* API de taxas de câmbio
+* Fetch / HTTP Requests
+
+### Deploy
+
+* Hospedagem em nuvem
+
+---
+
+## 📦 Instalação local
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/desenvolvimentoweb1983/conversor-moedas-web.git
+```
+
+Entre na pasta:
+
+```bash
+cd conversor-moedas-web
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra no navegador:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔑 Variáveis de ambiente
 
-To learn more about Next.js, take a look at the following resources:
+Crie um arquivo `.env.local` na raiz do projeto:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+NEXT_PUBLIC_API_KEY=SUA_CHAVE_DE_API
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📁 Estrutura do Projeto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+app/
+components/
+services/
+hooks/
+public/
+styles/
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🎯 Objetivos de Aprendizado
+
+Este projeto foi desenvolvido para praticar:
+
+* Migração de aplicação desktop para web
+* Consumo de APIs externas
+* Desenvolvimento com React moderno
+* Estruturação de projetos escaláveis
+* Versionamento com Git
+* Deploy em produção
+* Boas práticas de interface e UX
+
+---
+
+## 📈 Evolução Técnica
+
+Python Desktop → React Web App
+
+Tkinter → Interface Responsiva
+Requests → Fetch API
+Aplicação Local → Deploy em Produção
+
+---
+
+## 🤝 Contribuições
+
+Sugestões e melhorias são bem-vindas.
+
+Sinta-se à vontade para abrir issues ou pull requests.
+
+---
+
+## 👨‍💻 Autor
+
+Projeto desenvolvido como parte da minha jornada de aprendizado em desenvolvimento de software, explorando a evolução de aplicações locais para sistemas web modernos.
+
+---
+
+## ⭐ Se gostou do projeto
+
+Deixe uma estrela no repositório 🙂

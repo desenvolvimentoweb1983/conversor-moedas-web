@@ -1,0 +1,70 @@
+/* Navbar.module.css */
+
+/* Header principal */
+.navbarHeader {
+  width: 100%;
+  border-bottom: 1px solid #e5e7eb; /* gray-200 */
+  background-color: #ffffff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.dark .navbarHeader {
+  background-color: #0a0a0a;
+  border-color: #374151; /* gray-700 */
+}
+
+/* Nav interno */
+.navbarNav {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbarLogo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+body.dark .navbarLogo {
+  color: #f3f4f6;
+}
+
+.navbarLogo:hover {
+  color: #6b7280; /* gray-500 */
+}
+
+/* Links */
+.navbarLinks {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.navbarLinks a {
+  color: #111827;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+body.dark .navbarLinks a {
+  color: #f3f4f6;
+}
+
+.navbarLinks a:hover {
+  color: #6b7280; /* gray-500 */
+}
+
+/* Mobile (hamburger) - opcional, se quiser depois */
+@media (max-width: 768px) {
+  .navbarLinks {
+    display: none; /* você pode ativar menu mobile aqui */
+  }
+}
